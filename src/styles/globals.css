@@ -1,0 +1,11 @@
+:root {
+    --color-text: #4c4f69;
+    --color-base: #eff1f5;
+}
+
+#root {
+    display: flex;
+    place-content: center;
+
+    color: var(--color-text);
+}

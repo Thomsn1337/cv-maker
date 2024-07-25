@@ -1,0 +1,31 @@
+.cv-viewer {
+    --color-header: #179299;
+    --color-sidebar: #04a5e5;
+
+    box-sizing: border-box;
+    width: 210mm;
+    height: 297mm;
+    box-shadow: 1px 1px 4px black;
+
+    flex: 0 0 auto;
+
+    display: grid;
+    grid-template-columns: [header-start sidebar-start] 18rem [sidebar-end content-start] 1fr [header-end content-end];
+    grid-template-rows: [header-start sidebar-start] 10rem [header-end content-start] 1fr [sidebar-end content-end];
+}
+
+.header {
+    background: var(--color-header);
+    grid-area: header-start / header-start / header-end / header-end;
+    z-index: 1;
+    align-self: end;
+    padding: 1rem 2rem;
+}
+
+.sidebar {
+    background: var(--color-sidebar);
+    grid-area: sidebar-start / sidebar-start / sidebar-end / sidebar-end;
+
+    padding-top: 12rem;
+    color: var(--color-base);
+}
