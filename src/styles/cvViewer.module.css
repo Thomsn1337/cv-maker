@@ -14,6 +14,10 @@
     grid-template-rows: [header-start sidebar-start] 10rem [header-end content-start] 1fr [sidebar-end content-end];
 }
 
+/* ------ */
+/* Header */
+/* ------ */
+
 .header {
     background: var(--color-header);
     grid-area: header-start / header-start / header-end / header-end;
@@ -21,6 +25,16 @@
     align-self: end;
     padding: 1rem 2rem;
 }
+
+.header h1,
+.header p {
+    text-align: right;
+    margin: 0;
+}
+
+/* ------- */
+/* Sidebar */
+/* ------- */
 
 .sidebar {
     background: var(--color-sidebar);
