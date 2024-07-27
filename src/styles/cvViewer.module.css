@@ -1,6 +1,6 @@
 .cv-viewer {
-    --color-header: #179299;
-    --color-sidebar: #04a5e5;
+    --color-header: #209fb5;
+    --color-sidebar: #1e66f5;
 
     box-sizing: border-box;
     width: 210mm;
@@ -12,6 +12,11 @@
     display: grid;
     grid-template-columns: [header-start sidebar-start] 18rem [sidebar-end content-start] 1fr [header-end content-end];
     grid-template-rows: [header-start sidebar-start] 10rem [header-end content-start] 1fr [sidebar-end content-end];
+}
+
+.separator {
+    border: 1px solid var(--color-base);
+    margin: 2rem 0;
 }
 
 /* ------ */
@@ -41,5 +46,24 @@
     grid-area: sidebar-start / sidebar-start / sidebar-end / sidebar-end;
 
     padding-top: 12rem;
+    padding-inline: 1.5rem;
     color: var(--color-base);
+}
+
+/* General section */
+
+.general ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.general li {
+    display: flex;
+    gap: 0.6rem;
+    align-items: center;
 }
