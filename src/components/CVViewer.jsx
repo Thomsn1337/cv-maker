@@ -33,7 +33,12 @@ export default function CVViewer({ data }) {
                     styles={styles}
                 />
             </div>
-            <div className={styles.content}></div>
+            <div className={styles.content}>
+                <section className={styles.about}>
+                    <h2>About me</h2>
+                    <p>{general.about}</p>
+                </section>
+            </div>
         </div>
     );
 }

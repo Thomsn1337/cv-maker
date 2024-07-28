@@ -109,3 +109,24 @@
 .rating-bar > .rating-block.set:not(:first-child) {
     border-left: 1px solid var(--color-sidebar);
 }
+
+/* ------- */
+/* Content */
+/* ------- */
+
+.content {
+    padding: 0 2rem;
+}
+
+.content h2,
+.content p {
+    margin: 0;
+}
+
+.content section {
+    margin-block: 2rem;
+}
+
+.about p {
+    margin-top: 0.5rem;
+}
