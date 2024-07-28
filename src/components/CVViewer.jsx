@@ -4,6 +4,7 @@ import styles from "@styles/cvViewer.module.css";
 
 import GeneralSection from "./CVViewer/generalSection";
 import SkillSection from "./CVViewer/skillSection";
+import EducationSection from "./CVViewer/educationSection";
 
 /**
  * @param {Object} param0
@@ -38,6 +39,8 @@ export default function CVViewer({ data }) {
                     <h2>About me</h2>
                     <p>{general.about}</p>
                 </section>
+
+                <EducationSection data={education} styles={styles} />
             </div>
         </div>
     );
