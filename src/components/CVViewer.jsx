@@ -1,7 +1,9 @@
 /** @typedef {import("@customTypes/cv-data").CVData} CVData */
 
 import styles from "@styles/cvViewer.module.css";
+
 import GeneralSection from "./CVViewer/generalSection";
+import SkillSection from "./CVViewer/skillSection";
 
 /**
  * @param {Object} param0
@@ -23,6 +25,13 @@ export default function CVViewer({ data }) {
             <div className={styles.sidebar}>
                 <GeneralSection data={general} styles={styles} />
                 <div className={styles.separator}></div>
+                <SkillSection name="Skills" data={skills} styles={styles} />
+                <div className={styles.separator}></div>
+                <SkillSection
+                    name="Languages"
+                    data={languages}
+                    styles={styles}
+                />
             </div>
             <div className={styles.content}></div>
         </div>
